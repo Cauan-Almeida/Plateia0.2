@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Plateia</title>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <header id="header-menu">
+        <div class="tooltip">
+            <a href="index.html" id="logo">
+                <img src="IMG/Logo.png" alt="Logo Plateia" />
+            </a>
+            <span class="tooltiptext">Criada pelo Vitinho</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="profile-link">
+                    <img class="img-2" src="IMG/perfil-de-usuario.png" alt="Perfil">
+                </a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>Login</h2>
+        <div id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button class="login-btn" onclick="tentarLogin()">Entrar</button>
+            
+            <p class="toggle-form" onclick="toggleFormulario()">Não tem uma conta? Cadastre-se</p>
+        </div>
+        
+        <div id="cadastro-form">
+            <label for="cadastro-nome">Nome:</label>
+            <input type="text" id="cadastro-nome" name="nome" required>
+            
+            <label for="cadastro-email">Email:</label>
+            <input type="email" id="cadastro-email" name="email" required>
+            
+            <label for="cadastro-senha">Senha:</label>
+            <input type="password" id="cadastro-senha" name="senha" required>
+            
+            <label for="cadastro-confirmar-senha">Confirmar Senha:</label>
+            <input type="password" id="cadastro-confirmar-senha" name="confirmar-senha" required>
+            
+            <button class="cadastro-btn" onclick="tentarCadastro()">Cadastrar</button>
+            
+            <p class="toggle-form" onclick="toggleFormulario()">Já tem uma conta? Faça login</p>
+        </div>
+        
+        <div id="user-info" class="user-info">
+            <h3>Bem-vindo, <span id="nome-usuario"></span>!</h3>
+            <button class="logout-btn" onclick="fazerLogout()">Sair</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-logos">
+            <a href="">
+                <img src="IMG/icons8-whatsapp-48 (1).png" alt="WhatsApp">
+            </a>
+            <a href="">
+                <img src="IMG/icons8-instagram-48 (1).png" alt="Instagram">
+            </a>
+            <a href="">
+                <img src="IMG/icons8-facebook-48.png" alt="Facebook">
+            </a>
+            <a href="">
+                <img src="IMG/icons8-linkedin-48 (1).png" alt="LinkedIn">
+            </a>
+            <a href="">
+                <img src="IMG/icons8-github-48.png" alt="GitHub">
+            </a>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Plateia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/auth.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plateia - Pratique sua Oratória</title>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header-menu">
+      <div class="tooltip">
+        <a href="index.html" id="logo">
+          <img src="IMG/Logo.png" alt="Logo Plateia" />
+        </a>
+        <span class="tooltiptext">Criada pelo Vitinho</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#quotes">Citações</a></li>
+          <li><a href="#favorites">Favoritos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html" class="profile-link">
+            <img class="img-2" src="IMG/perfil-de-usuario.png" alt="Perfil">
+          </a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="IMG/img-1.jfif" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+              <img src="IMG/img-2.jfif" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+              <img src="IMG/img-3.jfif" alt="Imagem 3">
+            </div>
+          </div>
+          <button class="carousel-control prev" aria-label="Anterior">❮</button>
+          <button class="carousel-control next" aria-label="Próximo">❯</button>
+        </div>
+      </section>
+
+      <section id="quotes" class="quotes-section">
+        <h2 class="section-title">Citações Inspiradoras</h2>
+        <button id="new-quote" class="btn">Nova Citação</button>
+        <div id="quote-display" class="quote-container">
+          <!-- Citação será injetada aqui -->
+        </div>
+      </section>
+
+      <section id="favorites" class="favorites-section">
+        <h2 class="section-title">Citações Favoritas</h2>
+        <div id="favorites-container">
+          <!-- Favoritos serão injetados aqui -->
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-logos">
+        <a href="#" aria-label="WhatsApp">
+          <img src="IMG/icons8-whatsapp-48 (1).png" alt="WhatsApp">
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="IMG/icons8-instagram-48 (1).png" alt="Instagram">
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="IMG/icons8-facebook-48.png" alt="Facebook">
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <img src="IMG/icons8-linkedin-48 (1).png" alt="LinkedIn">
+        </a>
+        <a href="#" aria-label="GitHub">
+          <img src="IMG/icons8-github-48.png" alt="GitHub">
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2024 Plateia. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
